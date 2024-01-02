@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡IM4U </title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: rgb(123, 174, 228);
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 50px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+
+    body {
+        background-size: cover;
+                
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+       
+        
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        font-size: 2em;
+        color: white;
+        user-select: none;
+    }
+
+    .navigation a,
+    .navigation button {
+        position: relative;
+        font: 1.1em;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    .navigation a::after,
+    .navigation button::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3%;
+        background: white;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+    }
+
+    .navigation a:hover::after,
+    .navigation button:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .navigation .login-pop {
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid white;
+        outline: none;
+        border-radius: 6px;
+        margin-left: 40px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: white;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .navigation .login-pop:hover {
+        background: white;
+        color: black;
+    }
+
+    .about-section {
+        position: relative;
+        height: 500px;
+        width: 870px;
+        text-align: center;
+        border-radius: 46px;
+        padding: 50px;
+        background-color: rgba(375, 10, 10, 0.08);
+        backdrop-filter: blur(3px);
+        margin-top: 100px;
+    }
+
+    .about-text {
+        border-color: ;
+        padding-top: 130px;
+        margin-bottom: 141px;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-btn {
+        justify-content: inherit;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        border-radius: 21px;
+        background-color: #ffc0e72e;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #333;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .explore-btn:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .ai-fields-section {
+        margin-top: 50px;
+    }
+
+    .ai-fields-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ai-fields-list li {
+        margin: 20px;
+    }
+
+    .ai-fields-list a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2em;
+        display: inline-block;
+        transition: color 0.3s;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #333;
+    }
+
+    .ai-fields-list a:hover {
+        background-color: #333;
+        color: white;
+    }
+
+    .contact-footer {
+        width: 100%;
+        margin-top: 50px;
+        background-color: #222;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .contact-footer p {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .contact-footer a {
+        color: #ffc0e7;
+        text-decoration: none;
+    }
+
+    .contact-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .main-content h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+</style>
+
+<body>
+    <header>
+        
+        <h2 class="logo"> ⚡IM4U</h2>
+        <nav class="navigation">
+            <a href="Home Page.html" class="section" id="">🏠HOME</a>
+            <a href="page2.html" download="Anitsimage.jpeg" section" id="categories-button" style=" background-color: transparent; margin: 0px
+            ; border: 0px; color: white;">☑️CATEGORY</a>
+            <div id="categories-container" style="display: none;">
+            </div>
+            <a href="contact.html"  download="" class="section"> 📪CONTACT US </a>
+           
+        </nav>
+    </header> 
+    <div class="about-section">
+        <div class="about-text">
+            <h1>Welcome to ⚡IM4U!</h1>
+            <p style="color: rgb(28, 43, 55); font-weight: 300;">"Discover a curated hub of AI websites transforming
+                work and life. From intuitive personal assistants to data-driven tools, access innovations simplifying
+                tasks across industries. Find efficiency in healthcare, finance, education, and beyond. Elevate
+                productivity with cutting-edge AI solutions, reducing workload and empowering focus.</p>
+        </div>
+        <a href="page2.html" class="explore-btn">Explore Now</a>
+    </div>
+    <nav>
+        <div class="ai-fields-section">
+            <h2 align="center">POPULAR CATEGORIES</h2>
+            <ul class="ai-fields-list">
+                <ul class="ai-fields-list">
+                    <li><a ">Ai tool for Copy Writing</a></li>
+                    <li><a >Para Phrasers Tool</a></li>
+                    <li><a >Prompt your  Art</a></li>
+                    <li><a >Make SEO your page</a></li>
+                    <li><a >Writer with Generative Ai</a></li>
+                    <li><a >Peter AI for content </a></li>
+                    <li><a >write stories from pics</a></li>
+                    <li><a>Travel</a></li>
+                <li><a href="#automation">Automation</a></li>
+                <li><a href="#virtual-reality">Virtual Reality</a></li>
+                <li><a href="#augmented-reality">Augmented Reality</a></li>
+                <li><a href="#blockchain">Blockchain</a></li>
+                <!-- Add more AI fields as needed -->
+            </ul>
+        </div>
+    </nav>
+    <div class="contact-footer">
+        <h2>Contact Us:</h2>
+        <p>Email: <a href="mailto:IM4U@gmail.com">IM4U@gmail.com</a></p>
+        <p>Phone: +91 7386928955</p>
+        <p>&copy; 2023 ⚡IM4U - Your AI Hub. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+*
+    {
+        margin:0;
+    padding: 0;
+box-sizing: border-box;
+    }
+    header
+{
+background-color:rgb(123, 174, 228) ;
+margin:0;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 50px;
+
+box-sizing: border-box;
+display: flex;
+justify-content:space-between;
+align-items: center;
+z-index: 99;
+}
+
+body
+{
+   display: flex;
+   justify-content: center;
+   
+   align-items: center;
+   background-image: url('geadient.jpg')  repeating-linear-gradient();
+   max-height:auto;
+   background-size:100%;
+   background-position: center;
+
+    
+}
+.section
+{
+    background: transparent;
+    border: 0px;
+    color: white;
+    left: -9px;
+
+}
+
+#categories-button {
+  /* Style the button as desired (e.g., color, font, size, etc.) */
+}
+
+#categories-container {
+    background: transparent;
+    border: 0px;
+    color: white;
+    left: -9px;
+
+  /* Style the container as needed (e.g., background color, padding, etc.) */
+}
+
+#categories-container ul {
+  /* Style the category list (e.g., font, spacing, bullets) */
+}
+
+.logo
+{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+
+}
+
+
+.navigation a{
+    position:relative;
+    font: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+
+}
+.navigation button{
+    position:relative;
+    font: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+
+}
+.navigation a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3%;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform  0.3s;;
+}
+.navigation button::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3%;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform  0.3s;;
+}
+.navigation a:hover::after
+{transform-origin:left;
+    transform: scaleX(1);
+}
+.navigation button:hover::after
+{transform-origin:left;
+    transform: scaleX(1);
+}
+.navigation .login-pop
+{
+    
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation .login-pop
+{
+    
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation .login-pop:hover
+{
+    background: white;
+    color:black;
+
+}
+img 
+{
+    border-radius: 25px;
+}
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px; /* Increased width */
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* Add this CSS to your existing styles or style tag */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides img {
+  display: none;
+  width: 100%;
+}
+
+/* Prev/Next buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive images */
+@media screen and (max-width: 768px) {
+  .prev,
+  .next {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category-box {
+  width: calc(30% - 20px); /* Adjust width as needed */
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.category-box:first-child {
+  width: 100%; /* Make the first box take full width */
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-box h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.category-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.category-link:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.textarea
+{
+    height: 267px;
+    width: 426px;
+}
+.row
+{
+    display: grid;
+}
+.category {
+    background-color: #ffffff; /* White category background */
+    border: 1px solid #007bff; /* Primary blue border */
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+.my-div {
+    /* right: 24px; */
+    width: 97%;
+    height: 500px;
+    background-color:rgba(15, 1, 12, 0.057);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 165px;
+    left: 53px;
+    right: 45px;
+    border-radius: 41px;
+}
+h1
+{
+    padding: 6px;
+    margin-top: 212px;
+    color: #ae5c97;
+}
+.box
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+   
+}
+.container {
+    display: grid;
+    margin-top: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns of equal width */
+    gap: 20px; /* Adjust spacing between columns */
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column; /* Arrange boxes vertically within each column */
+    gap: 10px; /* Adjust spacing between boxes */
+  }
+  
+  .box {
+    background-color: #cd7ad894;
+    padding: 15px;
+    border: 1px solid #ccc;
+    height: 267px;
+    width: 426px;
+    align-content: space-between;
+    margin: 18px;
+    right: -54px;
+    border-radius: 29px;
+    margin-bottom: 7px;
+    border-radius: 32px;
+    margin-right: 77px;
+    margin-left: -40px;
+    border: 1px solid #eee;
+    /* color: transparent;
+    .container {
+            margin-top: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns of equal width */
+  gap: 30px; /* Spacing between columns */
+}
+
+.column {
+  background-color: #f5f5f5; /* Light gray background for columns */
+  border: 1px solid #eee; /* Thin border around columns */
+  padding: 20px; /* Padding within each column */
+  border-radius: 32px; /* Slightly rounded corners */
+}
+
+.box {
+    background-color: #cd7ad894; /* White background for boxes */
+  border: 1px solid #ddd; /* Thin border around boxes */
+  padding: 15px; /* Padding within each box */
+  margin-bottom: 10px; /* Spacing between boxes */
+  border-radius: 45px; /* Slightly rounded corners */
+}
+
+.box:hover {
+  background-color: #f2f2f2; /* Slightly lighter background on hover */
+}
+
+.box h3 {
+  font-size: 18px; /* Heading size */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 5px; /* Spacing below heading */
+  color: #333; /* Darker text for heading */
+}
+
+.box p {
+  font-size: 16px; /* Body text size */
+  line-height: 1.5; /* Line spacing for readability */
+  color: #666; /* Medium gray text for body */
+}
+
+  
+  
+  .matter
+  {
+    text-decoration: none;
+    margin-top: -172px;
+    margin-left: 50px;
+  }
+  a{
+    text-decoration: none;
+    font-size: larger;
+  }
+  .a1
+  {
+    align-items: center;
+    height: 53px;
+    width: 154px;
+    padding: 2px;
+    border-radius: 57px;
+    margin-top: 68px;
+    background-color: transparent;
+    margin-left: 111px;
+  }
+  

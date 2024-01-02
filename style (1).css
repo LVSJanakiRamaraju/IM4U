@@ -1,0 +1,316 @@
+*
+    {
+        margin:0;
+    padding: 0;
+box-sizing: border-box;
+    }
+    header
+{
+background-color:rgb(123, 174, 228) ;
+margin:0;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 50px;
+
+box-sizing: border-box;
+display: flex;
+justify-content:space-between;
+align-items: center;
+z-index: 99;
+}
+
+body
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   height:100%;
+   width:100%;
+  
+   background: url('geadient1.jpg');
+   
+   background-size: 100% 100%;
+
+   background-repeat: no-repeat;
+
+    
+}
+
+#categories-button {
+  /* Style the button as desired (e.g., color, font, size, etc.) */
+}
+
+#categories-container {
+  /* Style the container as needed (e.g., background color, padding, etc.) */
+}
+
+#categories-container ul {
+  /* Style the category list (e.g., font, spacing, bullets) */
+}
+
+.logo
+{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+
+}
+
+
+.navigation a{
+  position:relative;
+  font: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+
+}
+.navigation button{
+  position:relative;
+  font: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+
+}
+.navigation a::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3%;
+  background: white;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform  0.3s;;
+}
+.navigation button::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3%;
+  background: white;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform  0.3s;;
+}
+.navigation a:hover::after
+{transform-origin:left;
+  transform: scaleX(1);
+}
+.navigation button:hover::after
+{transform-origin:left;
+  transform: scaleX(1);
+}
+.navigation .login-pop
+{
+  
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color:white;
+  font-weight: 500;
+  transition: .3s;
+}
+.navigation .login-pop
+{
+    
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation .login-pop:hover
+{
+    background: white;
+    color:black;
+
+}
+img 
+{
+    border-radius: 25px;
+}
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px; /* Increased width */
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  /* Rest of your existing styles for the slideshow and slides */
+
+
+  /* General styles */
+
+  
+  
+  /* Blur box styles */
+  .blur-box {
+    color: white;
+    border-color: black;
+    width: 800px; /* Increased width */
+    height: 400px; /* Increased height */
+    background-color: rgba(17, 10, 10, 0.08); /* Semi-transparent white */
+    backdrop-filter: blur(3px); /* Adjust the blur effect */
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-section {
+    position: absolute;
+    height: 588px;
+    width: 870px;
+    text-align: center;
+    border-radius: 46px;
+    padding: 50px;
+    background-color: rgba(375, 10, 10, 0.08);
+    backdrop-filter: blur(3px);
+    margin-top: 20px;
+}
+
+.about-text {
+  border-color: ;
+  padding-top: 130px;
+  margin-bottom: 141px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-btn {
+  justify-content: inherit;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  border-radius: 21px;
+  background-color: #ffc0e72e;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+   
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+  
+  /* Button styles */
+  .button-container {
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 100px; /* Adjust margin to separate paragraph and button */
+  }
+  
+  /* Button styles */
+  .center-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a0b2bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .ai-fields-section {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+  
+    background-image: url(geadient.jpg);
+    margin-top: 376px;
+    margin-left: -800px;
+    border-radius: 1px;
+}
+
+.ai-fields-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ai-fields-list li {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.ai-fields-list a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: color 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ai-fields-list a:hover {
+    background-color: rgba(0, 0, 0, 0.105);
+    color: white;
+}
+.contact-footer {
+  width: 100%;
+  margin-top: 2300px;
+  align-self: bottom;
+  position:absolute;
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contact-footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.contact-footer a {
+  color: #ffc0e7;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}

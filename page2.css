@@ -1,4 +1,4 @@
-*
+   *
     {
         margin:0;
     padding: 0;
@@ -166,7 +166,20 @@ img
     border-radius: 25px;
 }
 
-
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px; /* Increased width */
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 .name
 {
     width: 100%;
@@ -207,7 +220,7 @@ img
 
 /* style.css */
 .image-text-section {
-    margin-top: -313px;
+    margin-top: -283px;
     background-color:transparent;
     color: blue;
     position: absolute;
@@ -265,3 +278,4 @@ img
     margin-bottom: 20px;
     color: #333;
 }
+
